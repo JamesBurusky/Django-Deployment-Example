@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content%}
+	<h1>Welcome to contacts page inheriting base</h1>
+	<!--Passing the context-->
+	<p>{{ my_text }}, {{ my_number }}</p>
+	<p>Find us on twitter, instagram, facebook and whatsapp!</p>
+	<h3> {{ title|title }}</h3>
+	<ul>
+		{% for my_sub_item in my_list %}
+			<li>{{ forloop.counter }} - {{ my_sub_item }}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
+
+
+

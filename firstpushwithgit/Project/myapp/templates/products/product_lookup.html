@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>This is product number {{ object.id }}</h3>
+<h3>The product name is {{ object.title }}</h3>
+<p>"{{ object.description }}"</p>
+<p>its price is {{ object.price }}</p>
+{% endblock %}
